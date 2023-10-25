@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="src/src.js"></script>
+    <title>Resume</title>
+</head>
+<body>
+    
+    <div id="inner-nav"></div>
+    <div id="container">
+        <div id="profile">
+            <div id="image">
+                <img id="profile-photo" src="Imgs/MyPhoto.jpg" alt="Profile-Image">
+                <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
+            </div>
+            <p id="name">Lachezar Georgiev<br></p>
+
+
+            <hr width="100%">
+            <div id="about">
+                <p style="display:inline;">About</p>
+            </div>
+            <p id="year-graduation"><strong>Expected Year of Graduation</strong><br>Jan, 2024</p>
+
+            <p id="education"><strong>Location:</strong><br>Svishtov, Bulgaria</p>
+            
+            <p id="telephone"><strong>Phone:</strong><br>+359 876 503 551</p>
+
+            <p id="email"><strong>Email:</strong><br>g.lachezar@yahoo.co.uk</p>
+            
+            <p id="socials"><strong>Social links:</strong><br>
+                <div id="social-links">
+                    <!-- Facebook nad Twitter can be added later if needed. -->
+                    <!-- <a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a> -->
+                    <!-- <a href="#"><i class="fab fa-twitter stroke-transparent"></i></a> -->
+                    <a href="https://www.linkedin.com/in/lachezar-georgiev-8a1182101/"><i class="fab fa-linkedin-in stroke-transparent"></i></a>
+                    <a href="https://github.com/glachezar"><i class="fab fa-github stroke-transparent"></i></a>
+                </div>
+            </p>
+        </div>
+        <div id="info-cards">
+            <div class="card">
+                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
+                <ul>
+                    <li><p class="tags">No previous work experience in IT sector.</p>
+                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+
+                </ul>
+                <!-- <a href="#">+ Add work experience, including contracts and internships</a> -->
+            </div>
+            <div class="card">
+                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Workshop</p>
+                <ul>
+                    <li><p class="tags">Under construction!<br><span>Intern | <span>2023</span></span></p>
+                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+
+                </ul>
+                <!-- <a href="#">+ Add workshops attended</a> -->
+            </div>
+            <div class="card">
+                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education</p>
+                <ul>
+                    <li><p class="tags">Software University<br><span>Programming Fundamentals with C# | <span>May, 2022</span> |</span> 
+
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal1">See Certificate</button></p>
+                        <div class="modal" id="modal1">
+                            <!-- <div class="modal-header">
+                            </div> -->
+                            <!--  -->
+                            <div class="modal-body">
+                                <!-- <button data-close-button class="close-button">&times;</button> -->
+                                <img class="picture" src="Imgs/certificates/Fundamentals.jpg" alt="C# Fundamentals Certificate">
+                            </div>
+                        </div>
+                        <div id="overlay"></div>
+                        
+                    </li>
+
+                    <li><p class="tags">Software University<br><span>C# Advanced | <span>September, 2022</span> |</span>
+
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal2">See Certificate</button></p>
+                        <div class="modal" id="modal2">
+                            <!-- <div class="modal-header">
+                            </div> -->
+                            <!--  -->
+                            <div class="modal-body">
+                                <!-- <button data-close-button class="close-button">&times;</button> -->
+                                <img class="picture" src="Imgs/certificates/Advanced.jpg" alt="C# Advanced Certificate">
+                            </div>
+                        </div>
+                        <div id="overlay"></div>
+                        
+                    </li>
+
+                    <li><p class="tags">Software University<br><span>C# OOP | <span>October 2022</span> |</span>
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal3">See Certificate</button></p>
+                    <div class="modal" id="modal3">
+                        <div class="modal-body">
+                            <img class="picture" src="Imgs/certificates/OOP.jpg" alt="C# Advanced Certificate">
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                    </li>
+
+                    <li><p class="tags">Software University<br><span>MS SQL | <span>January 2023</span> |</span>
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal4">See Certificate</button></p>
+                        <div class="modal" id="modal4">
+
+                            <div class="modal-body">
+
+                                <img class="picture" src="Imgs/certificates/MSSQL.jpg" alt="C# Advanced Certificate">
+                            </div>
+                        </div>
+                        <div id="overlay"></div>
+                    </li>
+                    
+                    <li><p class="tags">Software University<br><span>Entity Framework Core | <span>February 2023</span> |</span>
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal5">See Certificate</button></p>
+                        <div class="modal" id="modal5">
+
+                            <div class="modal-body">
+
+                                <img class="picture" src="Imgs/certificates/EntityFrameworkCore.jpg" alt="C# Advanced Certificate">
+                            </div>
+                        </div>
+                        <div id="overlay"></div>
+                    </li>
+                    
+                    <li><p class="tags">Software University<br><span>HTML & CSS | <span>May 2023</span> |</span>
+                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal6">See Certificate</button></p>
+                        <div class="modal" id="modal6">
+
+                            <div class="modal-body">
+
+                                <img class="picture" src="Imgs/certificates/HTML-CSS.jpg" alt="C# Advanced Certificate">
+                            </div>
+                        </div>
+                        <div id="overlay"></div>
+                    </li>
+
+                    <li><p class="tags">Software University<br><span>ASP.NET Fundamentals | <span>May 2023</span></span></p>
+                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                    
+                    <li><p class="tags">Software University<br><span>ASP.NET Advanced | <span>June 2023</span></span></p>
+                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                    
+                    <li><p class="tags">Software University<br><span>JS Front-End | <span>In Progress</span></span></p>
+                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
