@@ -1,160 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script defer src="src/src.js"></script>
-    <title>Resume</title>
+  <meta charset="utf-8">
+  <title>Lachezar Georgiev's Page</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
+  <!-- <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-    
-    <div id="inner-nav"></div>
-    <div id="container">
-        <div id="profile">
-            <div id="image">
-                <img id="profile-photo" src="Imgs/Me300.jpg" alt="Profile-Image">
-                <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
-            </div>
-            <p id="name">Lachezar Georgiev<br></p>
 
+<body id="page-top">
 
-            <hr width="100%">
-            <div id="about">
-                <p style="display:inline;">About</p>
-            </div>
-            <p id="year-graduation"><strong>Expected Year of Graduation</strong><br>Jan, 2024</p>
-
-            <p id="education"><strong>Location:</strong><br>Svishtov, Bulgaria</p>
-            
-            <p id="telephone"><strong>Phone:</strong><br>+359 876 503 551</p>
-
-            <p id="email"><strong>Email:</strong><br>g.lachezar@yahoo.co.uk</p>
-            
-            <p id="Languages"><strong>Languages:</strong><br>English <br>Bulgarian</p>
-
-            <p id="socials"><strong>Social links:</strong><br>
-                <div id="social-links">
-                    <!-- Facebook nad Twitter can be added later if needed. -->
-                    <!-- <a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a> -->
-                    <!-- <a href="#"><i class="fab fa-twitter stroke-transparent"></i></a> -->
-                    <a href="https://www.linkedin.com/in/lachezar-georgiev-8a1182101/"><i class="fab fa-linkedin-in stroke-transparent"></i></a>
-                    <a href="https://github.com/glachezar"><i class="fab fa-github stroke-transparent"></i></a>
-                </div>
-            </p>
-        </div>
-        <div id="info-cards">
-            <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
-                <ul>
-                    <li><p class="tags">No previous work experience in IT sector.</p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-
-                </ul>
-                <!-- <a href="#">+ Add work experience, including contracts and internships</a> -->
-            </div>
-            <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Workshop</p>
-                <ul>
-                    <li><p class="tags">Under construction!<br><span>Intern | <span>2023</span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-
-                </ul>
-                <!-- <a href="#">+ Add workshops attended</a> -->
-            </div>
-            <div class="card">
-                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education</p>
-                <ul>
-                    <li><p class="tags">Software University<br><span>Programming Fundamentals with C# | <span>May, 2022</span> |</span> 
-
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal1">See Certificate</button></p>
-                        <div class="modal" id="modal1">
-                            <!-- <div class="modal-header">
-                            </div> -->
-                            <!--  -->
-                            <div class="modal-body">
-                                <!-- <button data-close-button class="close-button">&times;</button> -->
-                                <img class="picture" src="Imgs/certificates/Fundamentals.jpg" alt="C# Fundamentals Certificate">
-                            </div>
-                        </div>
-                        <div id="overlay"></div>
-                        
-                    </li>
-
-                    <li><p class="tags">Software University<br><span>C# Advanced | <span>September, 2022</span> |</span>
-
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal2">See Certificate</button></p>
-                        <div class="modal" id="modal2">
-                            <!-- <div class="modal-header">
-                            </div> -->
-                            <!--  -->
-                            <div class="modal-body">
-                                <!-- <button data-close-button class="close-button">&times;</button> -->
-                                <img class="picture" src="Imgs/certificates/Advanced.jpg" alt="C# Advanced Certificate">
-                            </div>
-                        </div>
-                        <div id="overlay"></div>
-                        
-                    </li>
-
-                    <li><p class="tags">Software University<br><span>C# OOP | <span>October 2022</span> |</span>
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal3">See Certificate</button></p>
-                    <div class="modal" id="modal3">
-                        <div class="modal-body">
-                            <img class="picture" src="Imgs/certificates/OOP.jpg" alt="C# Advanced Certificate">
-                        </div>
-                    </div>
-                    <div id="overlay"></div>
-                    </li>
-
-                    <li><p class="tags">Software University<br><span>MS SQL | <span>January 2023</span> |</span>
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal4">See Certificate</button></p>
-                        <div class="modal" id="modal4">
-
-                            <div class="modal-body">
-
-                                <img class="picture" src="Imgs/certificates/MSSQL.jpg" alt="C# Advanced Certificate">
-                            </div>
-                        </div>
-                        <div id="overlay"></div>
-                    </li>
-                    
-                    <li><p class="tags">Software University<br><span>Entity Framework Core | <span>February 2023</span> |</span>
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal5">See Certificate</button></p>
-                        <div class="modal" id="modal5">
-
-                            <div class="modal-body">
-
-                                <img class="picture" src="Imgs/certificates/EntityFrameworkCore.jpg" alt="C# Advanced Certificate">
-                            </div>
-                        </div>
-                        <div id="overlay"></div>
-                    </li>
-                    
-                    <li><p class="tags">Software University<br><span>HTML & CSS | <span>May 2023</span> |</span>
-                        &nbsp;&nbsp;&nbsp;<button data-modal-target="modal6">See Certificate</button></p>
-                        <div class="modal" id="modal6">
-
-                            <div class="modal-body">
-
-                                <img class="picture" src="Imgs/certificates/HTML-CSS.jpg" alt="C# Advanced Certificate">
-                            </div>
-                        </div>
-                        <div id="overlay"></div>
-                    </li>
-
-                    <li><p class="tags">Software University<br><span>ASP.NET Fundamentals | <span>May 2023</span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    
-                    <li><p class="tags">Software University<br><span>ASP.NET Advanced | <span>June 2023</span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    
-                    <li><p class="tags">Software University<br><span>JS Front-End | <span>In Progress</span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                </ul>
-            </div>
-        </div>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand js-scroll" href="#page-top">Lachezar Georgiev</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> -->
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#certificates">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work-experiance">Experience</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/Me-bg2.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title mb-4"> <span>Welcome to my page</span> <br> I am Lachezar Georgiev</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">C# Web Developer</span><strong class="text-slider"></strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ About Section Start /-->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/Me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Lachezar Georgiev</span></p>
+                      <p><span class="title-s">Profile: </span> <span>C# Web Developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>g.lachezar@yahoo.co.uk</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(+359)876-503-551</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Skill</p>
+                  <span>C#</span> 
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                  <span>ASP.NET</span> <!-- <span class="pull-right">75%</span> -->
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                  <span>EF Core</span> <!-- <span class="pull-right">50%</span> -->
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                  <span>Microsoft SQL</span> <!-- <span class="pull-right">50%</span> -->
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                  <span>HTML & CSS</span> <!-- <span class="pull-right">50%</span> -->
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                  <span>JavaScript</span> <!-- <span class="pull-right">50%</span> -->
+                  <div class="">
+                    <!-- <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Passionate and dedicated individual with a keen interest in software development and technology. 
+                    What started as a curiosity has grown into a profound fascination with the intricate world of coding and problem-solving. 
+                    Throughout my educational journey, I've delved into various aspects of programming, including and not only C# and ASP.NET technologies, 
+                    honing my skills and expanding my understanding of software development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ About Section End /-->
+
+  <!--/ Section Certificates Star /-->
+  <section id="certificates" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Certificates
+            </h3>
+            <p class="subtitle-a">
+              Check out my certyficates.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/Fundamentals.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/Fundamentals.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">C# Fundamentals</h2>
+                    <div class="w-more">
+                      <span class="w-date">Sep. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/Advanced.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/Advanced.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">C# Advanced</h2>
+                    <div class="w-more">
+                      <span class="w-date">Sep. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/OOP.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/OOP.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">C# OOP</h2>
+                    <div class="w-more">
+                      <span class="w-date">Dec. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/MSSQL.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/MSSQL.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Microsoft SQL</h2>
+                    <div class="w-more">
+                      <span class="w-date">Feb. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/EntityFrameworkCore.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/EntityFrameworkCore.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Entity Framework Core</h2>
+                    <div class="w-more">
+                      <span class="w-date">April 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+            <a href="img/HTML-CSS.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/HTML-CSS.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                  <h2 class="w-title">HTML & CSS</h2>
+                    <div class="w-more">
+                      <span class="w-date">June 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+              <a href="img/JavaScript-Certificate.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/JavaScript-Certificate.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                  <h2 class="w-title">JavaScript</h2>
+                    <div class="w-more">
+                      <span class="w-date">December 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="certificate-box">
+              <a href="img/Certificate-Intern.jpg" data-lightbox="gallery-mf">
+              <div class="certificate-img">
+                <img src="img/Certificate-Intern.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="certificate-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                  <h2 class="w-title">Internship</h2>
+                    <div class="w-more">
+                      <span class="w-date">February 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Certificates End /-->
+
+  <!--/ Section Work Experiance /-->
+  <section id="work-experiance" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              work experience
+            </h3>
+            <p class="subtitle-a">
+              At this part of my page you can see my work experiance.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Intern</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Intern & Team Lead Academy</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="#" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Housekeeping Manager</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="#">Title</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <!-- <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <!-- <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Work Experience /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/me-overlay.jpg)">
+    <div class="overlay-mf"></div>
+
+    <footer>
+
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="lib/lightbox/js/lightbox.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
